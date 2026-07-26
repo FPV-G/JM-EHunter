@@ -70,8 +70,10 @@ function handleKeyboardEvent(e: any) {
             if (store.readingMode == 0) {
                 storeAction.setCurViewIndex(store.curViewIndex - 1, keyboardUpdater)
             } else if (store.readingMode == 1) {
-                // Physical left key: always left-to-right motion
-                store.physicalFlipDirection = 1
+                // Physical left key: left-to-right motion (when not reversed)
+                // Apply reverse setting to match wheel behavior
+                const isReversed = store.IsReverseBookWheeFliplDirection
+                store.physicalFlipDirection = isReversed ? 0 : 1
                 // In RTL mode (bookDirection=0), left key goes to next page (index increases)
                 // In LTR mode (bookDirection=1), left key goes to prev page (index decreases)
                 const step = store.pagesPerScreen
@@ -83,8 +85,10 @@ function handleKeyboardEvent(e: any) {
             if (store.readingMode == 0) {
                 storeAction.setCurViewIndex(store.curViewIndex + 1, keyboardUpdater)
             } else if (store.readingMode == 1 && store.curViewIndex + store.pagesPerScreen < store.pageCount) {
-                // Physical right key: always right-to-left motion
-                store.physicalFlipDirection = 0
+                // Physical right key: right-to-left motion (when not reversed)
+                // Apply reverse setting to match wheel behavior
+                const isReversed = store.IsReverseBookWheeFliplDirection
+                store.physicalFlipDirection = isReversed ? 1 : 0
                 // In RTL mode (bookDirection=0), right key goes to prev page (index decreases)
                 // In LTR mode (bookDirection=1), right key goes to next page (index increases)
                 const step = store.pagesPerScreen

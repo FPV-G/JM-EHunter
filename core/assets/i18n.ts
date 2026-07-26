@@ -735,14 +735,14 @@ export default <any>{
         jp: 'ホイール感度'
     },
     wheelDirection: {
-        cn: '反转滚动方向',
-        en: 'Wheel Direction',
-        jp: 'ホイール方向'
+        cn: '动画反向',
+        en: 'Reverse Animation',
+        jp: 'アニメーション反転'
     },
     wheelDirectionTip: {
-        cn: '反转滚轮翻页方向',
-        en: 'Reverse Wheel Direction to flip',
-        jp: 'リバースホイール方向'
+        cn: '反转翻页动画方向（同时作用于滚轮和键盘）',
+        en: 'Reverse page turn animation direction (affects both wheel and keyboard)',
+        jp: 'ページめくりアニメーションの方向を反転（ホイールとキーボード両方に適用）'
     },
     tips: {
       cn: '提示',
