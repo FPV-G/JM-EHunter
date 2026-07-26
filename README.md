@@ -51,17 +51,6 @@ This fork extends the original EHunter with the following enhancements:
 
 ## Installation
 
-This is a userscript for Tampermonkey or similar browser extensions.
-
-1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
-2. Build the project (see Development section)
-3. Open Tampermonkey dashboard
-4. Click "Utilities" tab and drag `dist/jmehunter.iife.js` into the browser window
-5. Click "Install"
-
-The script will automatically activate on E-Hentai and 18comic gallery pages.
-
-## Development
 
 ### Prerequisites
 - Node.js 14 or higher
