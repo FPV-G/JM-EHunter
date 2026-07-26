@@ -28,10 +28,10 @@ type WindowWithJMEHunterBridge = Window & {
 const JMEHUNTER_STATUS_KEY = 'jmehunter:reader:open'
 const JMEHUNTER_SWITCH_ID = 'jmehunter-switch'
 const JMEHUNTER_CONTAINER_ID = 'jmehunter-app'
-const JMJMEHUNTER_OPEN_DURATION_MS = 720
-const JMJMEHUNTER_CLOSE_DURATION_MS = 580
-const JMJMEHUNTER_OPEN_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)'
-const JMJMEHUNTER_CLOSE_EASING = 'cubic-bezier(0.55, 0.08, 0.68, 0.53)'
+const JMEHUNTER_OPEN_DURATION_MS = 720
+const JMEHUNTER_CLOSE_DURATION_MS = 580
+const JMEHUNTER_OPEN_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)'
+const JMEHUNTER_CLOSE_EASING = 'cubic-bezier(0.55, 0.08, 0.68, 0.53)'
 
 function readJMEHunterStatus(): boolean {
   const value = PlatformService.storageGet(JMEHUNTER_STATUS_KEY, true)
