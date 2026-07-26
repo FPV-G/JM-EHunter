@@ -56,7 +56,7 @@ This is a userscript for Tampermonkey or similar browser extensions.
 1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
 2. Build the project (see Development section)
 3. Open Tampermonkey dashboard
-4. Click "Utilities" tab and drag `dist/jmehunter.iife.js` into the browser window
+4. Click the "Utilities" tab, and drag the `jmehunter.iife.js` file downloaded from [Release](https://github.com/FPV-G/JM-EHunter/releases) into the Tampermonkey window
 5. Click "Install"
 
 The script will automatically activate on E-Hentai and 18comic gallery pages.
