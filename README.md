@@ -1,6 +1,6 @@
 # JM-EHunter
 
-[中文版](README_CN.md)
+[中文版](README_CN.md) [日本語](README_JP.md)
 
 Enhanced manga reader based on [EHunter](https://github.com/hanFengSan/eHunter), with full support for both E-Hentai and 18comic (JM).
 
