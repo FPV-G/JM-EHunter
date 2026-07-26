@@ -54,7 +54,7 @@
 1. 在浏览器中安装 [Tampermonkey](https://www.tampermonkey.net/)
 2. 构建项目（见开发部分）
 3. 打开 Tampermonkey 管理面板
-4. 点击"实用工具"标签，将 `dist/jmehunter.iife.js` 拖入浏览器窗口
+4. 点击"实用工具"标签，将在[Release](https://github.com/FPV-G/JM-EHunter/releases)下载的 `jmehunter.iife.js` 拖入Tampermonkey窗口
 5. 点击"安装"
 
 脚本将自动在 E-Hentai 和 18comic 画廊页面上激活。
