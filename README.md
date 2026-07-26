@@ -1,125 +1,124 @@
 # JM-EHunter
 
-Enhanced manga reader supporting both E-Hentai and 18comic (JM)
+Enhanced manga reader based on [EHunter](https://github.com/hanFengSan/eHunter), with full support for both E-Hentai and 18comic (JM).
 
-基于原版 [EHunter](https://github.com/hanFengSan/eHunter) 的增强版漫画阅读器，支持 E-Hentai 和 18comic（禁漫天堂）双站点。
+## What's New
 
-## ✨ 主要特性
+This fork extends the original EHunter with the following enhancements:
 
-### 🎯 多站点支持
-- ✅ **E-Hentai** 完整支持
-- ✅ **18comic (JM)** 完整支持
-- ✅ 统一的阅读体验
+### 18comic (JM) Support
+- Full compatibility with 18comic (禁漫天堂) gallery pages
+- Automatic platform detection and theme adaptation
+- Orange theme for 18comic, green theme for E-Hentai sites
 
-### 🎨 增强的翻页体验
-- ✅ **动画速率控制**：可调节翻页动画速度（0.5x - 2.0x）
-- ✅ **统一动画速率**：所有动效使用一致的基准速度（0.70s）
-- ✅ **动画覆盖**：连续翻页不等待动画完成，响应更灵敏
-- ✅ **符合直觉的键盘控制**：方向键对应物理方向，不受 RTL/LTR 影响
+### Animation Speed Control
+- Adjustable page turn animation speed (0.5x to 2.0x)
+- Unified base animation duration (0.70s) across all animation modes
+- Real-time speed adjustment from the top bar
 
-### 🎭 多种翻页动效
-- 水平平移
-- 拟真翻书（3D 透视效果）
-- 旋转翻页（简洁 2D 旋转）
-- 垂直滑动
+### Animation Reverse Toggle
+- Reverse page turn animation direction for both mouse wheel and keyboard
+- Located in the top bar next to animation speed
+- Allows users to customize animation behavior based on personal preference
 
-### 🖱️ 灵活的控制方式
-- 键盘方向键
-- 鼠标滚轮
-- 点击屏幕区域
-- 统一的物理方向逻辑
+### Improved Animation Behavior
+- Animation override: continuous page turns no longer wait for previous animations to complete
+- Four animation modes: horizontal slide, book flip (3D), rotate (2D), vertical slide
+- Consistent physical direction logic for keyboard and mouse wheel controls
 
-## 🚀 快速开始
+### UI Improvements
+- Branding updated to "JM-EHUNTER" across all interface elements
+- Platform-specific color themes (orange for 18comic, green for E-Hentai)
+- Enhanced top bar with quick access to animation controls
 
-### 安装
+## Features Inherited from Original EHunter
+
+- Multiple reading modes (scroll and book)
+- Thumbnail view and quick navigation
+- Customizable page layout (single/double page)
+- RTL/LTR reading direction support
+- Keyboard shortcuts and mouse wheel navigation
+- Download functionality
+- Multiple language support (Chinese, English, Japanese)
+
+## Installation
+
+This is a userscript for Tampermonkey or similar browser extensions.
+
+1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser
+2. Build the project (see Development section)
+3. Open Tampermonkey dashboard
+4. Click "Utilities" tab and drag `dist/jmehunter.iife.js` into the browser window
+5. Click "Install"
+
+The script will automatically activate on E-Hentai and 18comic gallery pages.
+
+## Development
+
+### Prerequisites
+- Node.js 14 or higher
+- npm or yarn
+
+### Setup
 
 ```bash
 npm install
 ```
 
-### 开发模式
+### Development Build
 
 ```bash
 npm run dev
 ```
 
-### 构建生产版本
+### Production Build
 
 ```bash
 npm run build-prod
 ```
 
-### 安装到浏览器
+The output file will be in `dist/jmehunter.iife.js`.
 
-1. 构建生产版本
-2. 打开 Chrome/Edge 扩展管理页面
-3. 启用"开发者模式"
-4. 加载 `dist` 目录
+## Usage
 
-## 📖 使用说明
+### Animation Speed
+In book mode, use the "Animation Speed" dropdown in the top bar to adjust page turn speed:
+- 0.5x (slow)
+- 0.75x
+- 1.0x (default)
+- 1.25x
+- 1.5x
+- 2.0x (fast)
 
-### 动画速率控制
+### Animation Reverse
+Toggle the "Reverse Animation" switch in the top bar to reverse the animation direction for both keyboard arrow keys and mouse wheel scrolling.
 
-在书页模式下，顶栏会显示**动画速率**下拉选项：
+### Keyboard Shortcuts
+- Right arrow: trigger right-to-left animation
+- Left arrow: trigger left-to-right animation
+- Arrow up/down: previous/next page in scroll mode
+- Other shortcuts: see settings dialog
 
-- **0.5x**：慢速（适合细细品味）
-- **0.75x**：稍慢
-- **1.0x**：默认速度
-- **1.25x**：稍快
-- **1.5x**：快速
-- **2.0x**：极速（适合快速浏览）
-
-### 键盘快捷键
-
-- **右方向键 (→)**：触发从右往左的动画
-- **左方向键 (←)**：触发从左往右的动画
-- 不受 RTL/LTR 阅读模式影响，始终按物理方向翻页
-
-### 翻页动效选择
-
-在顶栏或设置对话框中选择：
-- **水平平移**：页面左右滑动
-- **拟真翻书**：3D 书页翻转效果
-- **旋转翻页**：简洁的 2D 旋转
-- **垂直滑动**：页面上下滑动
-- **无动画**：即时切换
-
-## 🔧 技术栈
+## Tech Stack
 
 - Vue 3
 - TypeScript
 - Vite
 - SCSS
 
-## 📝 更新日志
-
-### v2.0.0 (2025)
-
-#### 新增功能
-- ✅ 完整支持 18comic (JM) 站点
-- ✅ 动画速率控制（0.5x - 2.0x）
-- ✅ 动画覆盖功能（连续翻页不等待）
-- ✅ 统一的基准动画速率（0.70s）
-
-#### 改进
-- ✅ 重构键盘和滚轮控制逻辑
-- ✅ 统一物理方向动画（不受 RTL/LTR 影响）
-- ✅ 修复旋转翻页动画，与拟真翻书区分开
-- ✅ 改进翻页响应速度
-
-## 📄 许可证
+## License
 
 MIT License
 
-## 🙏 致谢
+## Credits
 
-本项目基于 [EHunter](https://github.com/hanFengSan/eHunter) 开发，感谢原作者 hanFengSan 的杰出工作。
+This project is based on [EHunter](https://github.com/hanFengSan/eHunter) by hanFengSan. Special thanks to the original author for creating such an excellent manga reader.
 
-## 🔗 相关链接
+## Links
 
-- [原版 EHunter](https://github.com/hanFengSan/eHunter)
-- [问题反馈](../../issues)
+- [Original EHunter](https://github.com/hanFengSan/eHunter)
+- [Issue Tracker](https://github.com/FPV-G/JM-EHunter/issues)
 
 ---
 
-**注意**: 本工具仅供学习交流使用，请遵守当地法律法规。
+**Disclaimer**: This tool is for educational and personal use only. Please comply with local laws and regulations.
