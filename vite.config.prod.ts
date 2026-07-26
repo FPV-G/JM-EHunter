@@ -81,6 +81,7 @@ export default defineConfig({
   build: {
     target: 'es2015',
     modulePreload: false,
+    minify: false,
     lib: { // add 30kb size
       entry: './src/main.ts',
       name: 'jmehunter',
