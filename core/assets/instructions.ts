@@ -21,12 +21,12 @@ const welcomeInstructionTemplate: Record<SupportedLang, string> = {
 6.有更多想要的功能, 可以反馈给我, 如果该功能可以有的话, 我有空的时候会支持的.
 
 ### iPhone和iPad使用指引
-说明链接：[链接](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
+说明链接：[链接](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
 
 ### JM-EHunter-local
-JM-EHunter-local是JM-EHunter的本地版本, 支持Windows和MacOS. [项目主页](https://github.com/hanFengSan/JM-EHunter_local)
+JM-EHunter-local是JM-EHunter的本地版本, 支持Windows和MacOS. [项目主页](https://github.com/FPV-G/JM-EHunter_local)
 
-[Github下载](https://github.com/hanFengSan/JM-EHunter_local/releases)
+[Github下载](https://github.com/FPV-G/JM-EHunter_local/releases)
 
 ### 反馈和建议
 * 可在[Github]({{HOME_PAGE}})上开issue给我.
@@ -58,12 +58,12 @@ JM-EHunter-local是JM-EHunter的本地版本, 支持Windows和MacOS. [项目主�
 6.If there are more features you would like, feel free to send feedback. If they are feasible, I will add them when time allows.
 
 ### iPhone and iPad Guide
-Guide link: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
+Guide link: [Link](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
 
 ### JM-EHunter-local
-The JM-EHunter-local is local version of JM-EHunter, supporting Windows and MacOS. [Home Page](https://github.com/hanFengSan/JM-EHunter_local)
+The JM-EHunter-local is local version of JM-EHunter, supporting Windows and MacOS. [Home Page](https://github.com/FPV-G/JM-EHunter_local)
 
-[Github releases](https://github.com/hanFengSan/JM-EHunter_local/releases)
+[Github releases](https://github.com/FPV-G/JM-EHunter_local/releases)
 
 ### Feedback & Suggestions
 * You can open an issue on [Github]({{HOME_PAGE}}).
@@ -95,12 +95,12 @@ If you enjoy this extension, I would really appreciate a five-star rating in the
 6.追加してほしい機能があれば、ぜひフィードバックしてください。実現可能であれば、時間のあるときに対応します。
 
 ### iPhone と iPad の利用ガイド
-案内リンク: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
+案内リンク: [Link](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
 
 ### JM-EHunter-local
-JM-EHunter-localはJM-EHunterのローカル版で、WindowsとMacOSをサポートしています。[Home Page](https://github.com/hanFengSan/JM-EHunter_local)
+JM-EHunter-localはJM-EHunterのローカル版で、WindowsとMacOSをサポートしています。[Home Page](https://github.com/FPV-G/JM-EHunter_local)
 
-[Github releases](https://github.com/hanFengSan/JM-EHunter_local/releases)
+[Github releases](https://github.com/FPV-G/JM-EHunter_local/releases)
 
 ### フィードバックと提案
 * [Github]({{HOME_PAGE}}) で issue を作成できます。

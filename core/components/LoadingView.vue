@@ -18,7 +18,7 @@
     </div>
     <p class="feedback-link">
       <strong>Feedback / Bug Report:</strong>
-      <a href="https://github.com/hanFengSan/JM-EHunter/issues" target="_blank" rel="noopener noreferrer">Open GitHub Issues</a>
+      <a href="https://github.com/FPV-G/JM-EHunter/issues" target="_blank" rel="noopener noreferrer">Open GitHub Issues</a>
     </p>
     <p class="error-message">{{ error.message }}</p>
     <div v-if="initializationSteps.length" class="init-steps">

@@ -17,7 +17,7 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 
 ### iPhone / iPad 支持
 * 目前在 iOS 15/iPadOS 15 上可运行油猴脚本/userscript，因此 JM-EHunter 也可在 iPhone / iPad 使用
-* 使用指南: [链接](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
+* 使用指南: [链接](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
 `,
     en: `
 ### v3.1.0 Notes
@@ -35,7 +35,7 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 
 ### iPhone / iPad Support
 * Userscripts can run on iOS 15 / iPadOS 15, so JM-EHunter is now available on iPhone and iPad
-* Guide: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
+* Guide: [Link](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
 `,
     jp: `
 ### v3.1.0 リリースノート
@@ -53,7 +53,7 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 
 ### iPhone / iPad 対応
 * iOS 15 / iPadOS 15 では userscript が動作するため、JM-EHunter を iPhone / iPad でも利用できます
-* ガイド: [リンク](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
+* ガイド: [リンク](https://github.com/FPV-G/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
 `,
 }
 
