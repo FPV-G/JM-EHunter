@@ -601,6 +601,7 @@ const defaultQuickSettingSelected = [
     'isChangeOddEven',
     'showBookPagination',
     'showBookThumbView',
+    'IsReverseBookWheeFliplDirection',
     'lang',
 ]
 

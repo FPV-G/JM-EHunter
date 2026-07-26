@@ -207,13 +207,12 @@ export function handleWheelFlipEvent(e: any) {
     }
 
     // Set physical flip direction based on logical direction and book direction
-    // For book-flip and rotate animations, we need to swap RTL/LTR directions for wheel events
-    // In RTL mode (bookDirection=0): next = left-to-right (1), prev = right-to-left (0)
-    // In LTR mode (bookDirection=1): next = right-to-left (0), prev = left-to-right (1)
+    // In RTL mode (bookDirection=0): next = right-to-left (0), prev = left-to-right (1)
+    // In LTR mode (bookDirection=1): next = left-to-right (1), prev = right-to-left (0)
     if (isToNext) {
-        store.physicalFlipDirection = store.bookDirection === 0 ? 1 : 0
-    } else {
         store.physicalFlipDirection = store.bookDirection === 0 ? 0 : 1
+    } else {
+        store.physicalFlipDirection = store.bookDirection === 0 ? 1 : 0
     }
 
     if (isToNext && store.curViewIndex + store.pagesPerScreen < store.pageCount) {
