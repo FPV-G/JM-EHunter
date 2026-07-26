@@ -42,3 +42,10 @@ Thumbs.db
 *.sln
 *.sw?
 .tmp
+
+# Backup and temporary folders
+core_old
+old
+新建文件夹
+backup
+temp
