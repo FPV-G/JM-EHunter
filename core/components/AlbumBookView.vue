@@ -193,6 +193,20 @@ const bookTransitionName = computed(() => {
         return isLogicalNextTurn ? 'screen-slide-next' : 'screen-slide-prev'
     }
     if (store.pageTurnAnimationMode === 'horizontal-slide') {
+        // Only modify keyboard arrow key behavior for horizontal slide
+        // RTL: left key loads from left (screen-horizontal-ltr)
+        // LTR: left key loads from right (screen-horizontal-rtl)
+        // Wheel/click remain unchanged
+        const isRTL = store.bookDirection === 0
+        const isKeyboard = store.curViewIndexUpdater === 'keyboard'
+
+        if (isKeyboard && !isRTL) {
+            // LTR + keyboard: invert direction so left key loads from right
+            return isRightToLeftMotion
+                ? 'screen-horizontal-ltr'
+                : 'screen-horizontal-rtl'
+        }
+        // RTL or non-keyboard (wheel/click): keep original logic
         return isRightToLeftMotion
             ? 'screen-horizontal-rtl'
             : 'screen-horizontal-ltr'
