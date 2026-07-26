@@ -1,6 +1,14 @@
 # JM-EHunter
 
+[中文版](README_CN.md)
+
 Enhanced manga reader based on [EHunter](https://github.com/hanFengSan/eHunter), with full support for both E-Hentai and 18comic (JM).
+
+## Preview
+
+<img src="https://raw.githubusercontent.com/FPV-G/JM-EHunter/master/github_image/LS%20(1).png" width="800" />
+
+<img src="https://raw.githubusercontent.com/FPV-G/JM-EHunter/master/github_image/LS%20(2).png" width="800" />
 
 ## What's New
 

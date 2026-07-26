@@ -2,6 +2,12 @@
 
 基于 [EHunter](https://github.com/hanFengSan/eHunter) 的增强版漫画阅读器，完整支持 E-Hentai 和 18comic（禁漫天堂）。
 
+## 预览
+
+<img src="https://raw.githubusercontent.com/FPV-G/JM-EHunter/master/github_image/LS%20(1).png" width="800" />
+
+<img src="https://raw.githubusercontent.com/FPV-G/JM-EHunter/master/github_image/LS%20(2).png" width="800" />
+
 ## 新增功能
 
 本分支在原版 EHunter 基础上进行了以下增强：
