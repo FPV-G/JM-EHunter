@@ -15,26 +15,26 @@ import { Platform, type InitializationError } from './platform/types'
 // Detect platform based on current URL
 const detectionResult = detectPlatform()
 
-type EHunterUiBridge = {
+type JMEHunterUiBridge = {
   open: () => void
   close: () => void
   toggle: (show: boolean) => void
 }
 
-type WindowWithEHunterBridge = Window & {
-  __EHUNTER_UI__?: EHunterUiBridge
+type WindowWithJMEHunterBridge = Window & {
+  __JMEHUNTER_UI__?: JMEHunterUiBridge
 }
 
-const EHUNTER_STATUS_KEY = 'ehunter:reader:open'
-const EHUNTER_SWITCH_ID = 'ehunter-switch'
-const EHUNTER_CONTAINER_ID = 'ehunter-app'
-const EHUNTER_OPEN_DURATION_MS = 720
-const EHUNTER_CLOSE_DURATION_MS = 580
-const EHUNTER_OPEN_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)'
-const EHUNTER_CLOSE_EASING = 'cubic-bezier(0.55, 0.08, 0.68, 0.53)'
+const JMEHUNTER_STATUS_KEY = 'jmehunter:reader:open'
+const JMEHUNTER_SWITCH_ID = 'jmehunter-switch'
+const JMEHUNTER_CONTAINER_ID = 'jmehunter-app'
+const JMJMEHUNTER_OPEN_DURATION_MS = 720
+const JMJMEHUNTER_CLOSE_DURATION_MS = 580
+const JMJMEHUNTER_OPEN_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)'
+const JMJMEHUNTER_CLOSE_EASING = 'cubic-bezier(0.55, 0.08, 0.68, 0.53)'
 
-function readEHunterStatus(): boolean {
-  const value = PlatformService.storageGet(EHUNTER_STATUS_KEY, true)
+function readJMEHunterStatus(): boolean {
+  const value = PlatformService.storageGet(JMEHUNTER_STATUS_KEY, true)
   if (typeof value === 'boolean') {
     return value
   }
@@ -47,12 +47,12 @@ function readEHunterStatus(): boolean {
   return true
 }
 
-function writeEHunterStatus(open: boolean): void {
-  PlatformService.storageSet(EHUNTER_STATUS_KEY, open)
+function writeJMEHunterStatus(open: boolean): void {
+  PlatformService.storageSet(JMEHUNTER_STATUS_KEY, open)
 }
 
 function createEhunterSwitch(onOpen: () => void, themeColor: string): void {
-  const existing = document.getElementById(EHUNTER_SWITCH_ID)
+  const existing = document.getElementById(JMEHUNTER_SWITCH_ID)
   if (existing) {
     existing.remove()
   }
@@ -68,8 +68,8 @@ function createEhunterSwitch(onOpen: () => void, themeColor: string): void {
   container.style.zIndex = '2147483646'
   container.style.cursor = 'pointer'
   container.style.transition = 'all 0.2s cubic-bezier(.46,-0.23,.37,2.38)'
-  container.setAttribute('title', 'open eHunter')
-  container.setAttribute('id', EHUNTER_SWITCH_ID)
+  container.setAttribute('title', 'open JM-EHunter')
+  container.setAttribute('id', JMEHUNTER_SWITCH_ID)
   container.addEventListener('click', () => {
     container.style.top = '-50px'
     window.setTimeout(() => {
@@ -98,11 +98,11 @@ function createEhunterSwitch(onOpen: () => void, themeColor: string): void {
 
 // Early return if no platform detected (non-album page)
 if (!detectionResult.platform) {
-  console.log('eHunter: No platform detected (non-album page), skipping initialization')
+  console.log('JM-EHunter: No platform detected (non-album page), skipping initialization')
   // Exit silently - no errors thrown per FR-006
 } else {
   // Platform detected - initialize reader
-  console.log(`eHunter: Platform detected: ${detectionResult.platform}`)
+  console.log(`JM-EHunter: Platform detected: ${detectionResult.platform}`)
 
   let isMounted = false
   let hostActionsApplied = false
@@ -181,17 +181,17 @@ if (!detectionResult.platform) {
   }
 
   const ensureMounted = (): HTMLElement => {
-    let container = document.getElementById(EHUNTER_CONTAINER_ID)
+    let container = document.getElementById(JMEHUNTER_CONTAINER_ID)
     if (!container) {
       container = document.createElement('div')
-      container.id = EHUNTER_CONTAINER_ID
+      container.id = JMEHUNTER_CONTAINER_ID
       container.classList.add('normalize')
       container.style.position = 'fixed'
       container.style.height = '100%'
       container.style.width = '100%'
       container.style.transitionProperty = 'top'
-      container.style.transitionDuration = `${EHUNTER_OPEN_DURATION_MS}ms`
-      container.style.transitionTimingFunction = EHUNTER_OPEN_EASING
+      container.style.transitionDuration = `${JMEHUNTER_OPEN_DURATION_MS}ms`
+      container.style.transitionTimingFunction = JMEHUNTER_OPEN_EASING
       container.style.background = '#333333'
       container.style.zIndex = '2147483647'
       container.style.top = '-100%'
@@ -223,7 +223,7 @@ if (!detectionResult.platform) {
             } catch (err) {
               isLoading.value = false
               error.value = err as InitializationError
-              console.error('eHunter initialization failed:', {
+              console.error('JM-EHunter initialization failed:', {
                 message: error.value.message,
                 stack: error.value.stack,
                 platform: error.value.platform,
@@ -236,13 +236,13 @@ if (!detectionResult.platform) {
           init()
 
           const handleClose = () => {
-            writeEHunterStatus(false)
+            writeJMEHunterStatus(false)
             restoreEHViewportOnClose()
             document.body.style.overflow = ''
-            const root = document.getElementById(EHUNTER_CONTAINER_ID)
+            const root = document.getElementById(JMEHUNTER_CONTAINER_ID)
             if (root) {
               root.style.top = '-100%'
-              scheduleHideContainer(root, EHUNTER_CLOSE_DURATION_MS)
+              scheduleHideContainer(root, JMEHUNTER_CLOSE_DURATION_MS)
             }
           }
 
@@ -263,23 +263,23 @@ if (!detectionResult.platform) {
         }
       })
 
-      app.mount(`#${EHUNTER_CONTAINER_ID}`)
+      app.mount(`#${JMEHUNTER_CONTAINER_ID}`)
       isMounted = true
     }
 
     return container
   }
 
-  const toggleEHunterView = (show: boolean): void => {
+  const toggleJMEHunterView = (show: boolean): void => {
     const container = ensureMounted()
     clearHideTimer()
     container.style.transitionProperty = 'top'
     container.style.transitionDuration = show
-      ? `${EHUNTER_OPEN_DURATION_MS}ms`
-      : `${EHUNTER_CLOSE_DURATION_MS}ms`
+      ? `${JMEHUNTER_OPEN_DURATION_MS}ms`
+      : `${JMEHUNTER_CLOSE_DURATION_MS}ms`
     container.style.transitionTimingFunction = show
-      ? EHUNTER_OPEN_EASING
-      : EHUNTER_CLOSE_EASING
+      ? JMEHUNTER_OPEN_EASING
+      : JMEHUNTER_CLOSE_EASING
     document.body.style.overflow = show ? 'hidden' : ''
 
     if (show) {
@@ -294,29 +294,29 @@ if (!detectionResult.platform) {
 
     restoreEHViewportOnClose()
     container.style.top = '-100%'
-    scheduleHideContainer(container, EHUNTER_CLOSE_DURATION_MS)
+    scheduleHideContainer(container, JMEHUNTER_CLOSE_DURATION_MS)
   }
 
-  const openEHunter = (): void => {
-    writeEHunterStatus(true)
-    toggleEHunterView(true)
+  const openJMEHunter = (): void => {
+    writeJMEHunterStatus(true)
+    toggleJMEHunterView(true)
   }
 
-  const closeEHunter = (): void => {
-    writeEHunterStatus(false)
-    toggleEHunterView(false)
+  const closeJMEHunter = (): void => {
+    writeJMEHunterStatus(false)
+    toggleJMEHunterView(false)
   }
 
-  ;(window as WindowWithEHunterBridge).__EHUNTER_UI__ = {
-    open: openEHunter,
-    close: closeEHunter,
-    toggle: toggleEHunterView
+  ;(window as WindowWithJMEHunterBridge).__JMEHUNTER_UI__ = {
+    open: openJMEHunter,
+    close: closeJMEHunter,
+    toggle: toggleJMEHunterView
   }
 
   const platformThemeColor = detectionResult.platform === Platform.C18 ? '#FF7A00' : '#2ecc71'
-  createEhunterSwitch(openEHunter, platformThemeColor)
+  createEhunterSwitch(openJMEHunter, platformThemeColor)
 
-  if (readEHunterStatus()) {
-    openEHunter()
+  if (readJMEHunterStatus()) {
+    openJMEHunter()
   }
 }
