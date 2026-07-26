@@ -1,4 +1,4 @@
-# JM+EHunter
+# JM-EHunter
 
 Enhanced manga reader supporting both E-Hentai and 18comic (JM)
 

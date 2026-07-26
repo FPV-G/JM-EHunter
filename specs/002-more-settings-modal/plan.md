@@ -1,6 +1,6 @@
 # Implementation Plan: 统一更多设置弹窗
 
-**Branch**: `001-more-settings-modal` | **Date**: 2026-02-18 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/spec.md`
+**Branch**: `001-more-settings-modal` | **Date**: 2026-02-18 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/spec.md`
 **Input**: Feature specification from `/specs/001-more-settings-modal/spec.md`
 
 ## Summary
@@ -36,7 +36,7 @@
 ### Documentation (this feature)
 
 ```text
-/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/
+/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/
 ├── plan.md
 ├── research.md
 ├── data-model.md
@@ -49,7 +49,7 @@
 ### Source Code (repository root)
 
 ```text
-/Users/alex/Desktop/works/js/eHunter/core/
+/Users/alex/Desktop/works/js/JM-EHunter/core/
 ├── components/
 │   ├── TopBar.vue
 │   ├── QuickActionList.vue
@@ -61,7 +61,7 @@
 └── assets/
     └── i18n.ts
 
-/Users/alex/Desktop/works/js/eHunter/src/
+/Users/alex/Desktop/works/js/JM-EHunter/src/
 ├── platform/base/service/PlatformService.js
 └── platform/eh/service/AlbumCacheService.ts
 ```
@@ -70,14 +70,14 @@
 
 ## Phase 0: Research Output
 
-- Completed in `/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/research.md`.
+- Completed in `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/research.md`.
 - All technical unknowns resolved: navigation behavior, persistence model, reset semantics, mobile adaptation, and destructive action UX.
 
 ## Phase 1: Design & Contracts Output
 
-- Data model defined in `/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/data-model.md`.
-- Contracts defined in `/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/contracts/settings-modal.openapi.yaml`.
-- Validation quickstart in `/Users/alex/Desktop/works/js/eHunter/specs/001-more-settings-modal/quickstart.md`.
+- Data model defined in `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/data-model.md`.
+- Contracts defined in `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/contracts/settings-modal.openapi.yaml`.
+- Validation quickstart in `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-more-settings-modal/quickstart.md`.
 - Agent context refresh executed via `.specify/scripts/bash/update-agent-context.sh opencode`.
 
 ## Post-Design Constitution Re-Check

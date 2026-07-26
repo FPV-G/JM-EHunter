@@ -18,7 +18,7 @@ export default defineConfig({
     }
   },
   define: {
-    __EHUNTER_VERSION__: JSON.stringify(pkg.version)
+    __JMEHUNTER_VERSION__: JSON.stringify(pkg.version)
   },
   server: {
     host: true,

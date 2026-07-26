@@ -47,7 +47,7 @@ function blockNHHostActions(): void {
 }
 
 function blockC18HostActions(): void {
-  console.log('eHunter: 18comic host actions initialized')
+  console.log('JM-EHunter: 18comic host actions initialized')
 }
 
 export function applyPlatformHostActions(platform: Platform): void {

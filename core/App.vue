@@ -284,7 +284,7 @@ onMounted(() => {
     }
 }
 
-#ehunter-app[data-ehunter-platform='C18'] .ehunter-app {
+#jmehunter-app[data-ehunter-platform='C18'] .ehunter-app {
     --ehunter-primary-color: #FF7A00;
     --ehunter-accent-color: #FF7A00;
     --ehunter-switch-track-active: #FFB166;

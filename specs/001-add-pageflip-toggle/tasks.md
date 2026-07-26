@@ -6,7 +6,7 @@ description: "Task list for 书页模式翻页动效开关"
 # Tasks: 书页模式翻页动效开关
 
 **Input**: Design documents from `/specs/001-add-pageflip-toggle/`
-**Prerequisites**: `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/plan.md`, `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/spec.md`, `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/research.md`, `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/data-model.md`, `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/contracts/page-turn-animation.openapi.yaml`
+**Prerequisites**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/plan.md`, `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/spec.md`, `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/research.md`, `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/data-model.md`, `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/contracts/page-turn-animation.openapi.yaml`
 
 **Tests**: Spec 未显式要求先写自动化测试；本任务以类型检查 + 运行时手动验收为主。
 
@@ -111,7 +111,7 @@ description: "Task list for 书页模式翻页动效开关"
 - [ ] T030 [P] 更新交付说明与验证步骤 in `specs/001-add-pageflip-toggle/quickstart.md`
 - [X] T031 在 `core/components/AlbumBookView.vue` 清理无用过渡样式并统一命名
 - [ ] T032 在 `core/store/app.ts` 与 `core/components/TopBar.vue` 清理临时字段/分支并补充最小注释
-- [ ] T033 运行类型检查 `npm run type-check` in `/Users/alex/Desktop/works/js/eHunter`
+- [ ] T033 运行类型检查 `npm run type-check` in `/Users/alex/Desktop/works/js/JM-EHunter`
 - [X] T034 运行 `npm run dev` 并使用 `chrome-devtools-mcp` 完成全量功能回归（US1+US2+US3）
 
 ---

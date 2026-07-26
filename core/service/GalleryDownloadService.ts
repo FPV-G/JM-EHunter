@@ -4,7 +4,7 @@ import { i18n } from '../store/i18n'
 import { getImageRetryStages } from './imageRetryPolicy'
 import { isTestEnvironment } from '../utils/runtimeEnv'
 
-declare const __EHUNTER_VERSION__: string | undefined
+declare const __JMEHUNTER_VERSION__: string | undefined
 
 export type DownloadTaskPhase = 'queued' | 'fetching' | 'compressing' | 'completed' | 'partial' | 'failed'
 export type DownloadSeverity = 'info' | 'success' | 'warning' | 'error'
@@ -40,7 +40,7 @@ export interface GalleryDownloadRunOptions {
     pageCount: number
     chunkSize: number
     autoRetryByOtherSource: boolean
-    eHunterVersion: string
+    jmEHunterVersion: string
     onStatus: (event: DownloadStatusEvent) => void
 }
 
@@ -80,11 +80,11 @@ function normalizeChunkSize(raw: number): number {
     return Math.floor(raw)
 }
 
-function getEHunterVersion(): string {
-    if (typeof __EHUNTER_VERSION__ === 'string' && __EHUNTER_VERSION__) {
-        return __EHUNTER_VERSION__
+function getjmEHunterVersion(): string {
+    if (typeof __JMEHUNTER_VERSION__ === 'string' && __JMEHUNTER_VERSION__) {
+        return __JMEHUNTER_VERSION__
     }
-    const raw = (globalThis as any).__EHUNTER_VERSION__
+    const raw = (globalThis as any).__JMEHUNTER_VERSION__
     if (typeof raw === 'string' && raw) {
         return raw
     }
@@ -345,7 +345,7 @@ export class GalleryDownloadService {
                 galleryTitle: options.galleryTitle,
                 totalPages,
                 downloadTime,
-                eHunterVersion: options.eHunterVersion || getEHunterVersion(),
+                jmEHunterVersion: options.jmEHunterVersion || getjmEHunterVersion(),
                 totalChunks,
                 chunkIndex: currentChunkIndex,
             }

@@ -1,6 +1,6 @@
 # Implementation Plan: PageView Magnifier Menu
 
-**Branch**: `[001-add-pageview-magnifier]` | **Date**: 2026-02-24 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageview-magnifier/spec.md`
+**Branch**: `[001-add-pageview-magnifier]` | **Date**: 2026-02-24 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageview-magnifier/spec.md`
 **Input**: Feature specification from `/specs/001-add-pageview-magnifier/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.

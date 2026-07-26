@@ -47,7 +47,7 @@ export class C18AlbumServiceImpl implements AlbumService {
             this.step(createStepUpdate(this.stepMap.extractImagePages, 'success', String(this.imgPageInfos.length)))
             this.thumbInfos = this.parser.getThumbInfos(this.imgPageInfos)
             this.step(createStepUpdate(this.stepMap.buildThumbnails, 'success', 'done'))
-            console.log('eHunter 18comic:', this.imgPageInfos.length, 'pages')
+            console.log('JM-EHunter 18comic:', this.imgPageInfos.length, 'pages')
         } catch (e) {
             this.fail(e instanceof Error ? e.message : String(e))
             return e instanceof Error ? e : new Error(String(e))

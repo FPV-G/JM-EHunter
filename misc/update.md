@@ -21,5 +21,5 @@ In `Book mode`, you can use mouse wheel to flip pages, and can customize the sen
 If you are using touchpad of Mac, please open the switch of `Wheel Direction` in settings to have a best experience.
 
 #### Update subscription (Chrome extension)
-If you are using eHunter by Chrome extension, you can use the new version of update subscription system of tag.
+If you are using JM-EHunter by Chrome extension, you can use the new version of update subscription system of tag.
 In new version, you can subscribe multiple tags once to get more accurate results, and you also can click `TEST TAG` button to test subscription.

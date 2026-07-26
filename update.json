@@ -9,11 +9,11 @@
         "operations":[
             {
                 "name":"油猴/暴力猴脚本更新",
-                "url":"https://openuserjs.org/scripts/alexchen/eHunter"
+                "url":"https://openuserjs.org/scripts/alexchen/JM-EHunter"
             },
             {
                 "name":"iOS脚本下载",
-                "url":"https://github.com/hanFengSan/eHunter/releases"
+                "url":"https://github.com/hanFengSan/JM-EHunter/releases"
             }
         ]
     },
@@ -27,11 +27,11 @@
         "operations":[
             {
                 "name":"Tampermonkey/Violentmonkey script update",
-                "url":"https://openuserjs.org/scripts/alexchen/eHunter"
+                "url":"https://openuserjs.org/scripts/alexchen/JM-EHunter"
             },
             {
                 "name":"iOS script download",
-                "url":"https://github.com/hanFengSan/eHunter/releases"
+                "url":"https://github.com/hanFengSan/JM-EHunter/releases"
             }
         ]
     },
@@ -45,11 +45,11 @@
         "operations":[
             {
                 "name":"Tampermonkey/Violentmonkey スクリプト更新",
-                "url":"https://openuserjs.org/scripts/alexchen/eHunter"
+                "url":"https://openuserjs.org/scripts/alexchen/JM-EHunter"
             },
             {
                 "name":"iOS スクリプトダウンロード",
-                "url":"https://github.com/hanFengSan/eHunter/releases"
+                "url":"https://github.com/hanFengSan/JM-EHunter/releases"
             }
         ]
     }

@@ -13,7 +13,7 @@
         </template>
         <template #main>
             <div class="main-content">
-                <TopBar class="top-bar" @closeEHunter="closeReader"/>
+                <TopBar class="top-bar" @closeJMEHunter="closeReader"/>
                 <transition name="slow-horizontal-fade">
                     <AlbumScrollView class="content scroll-mode" v-if="store.readingMode === 0" />
                 </transition>

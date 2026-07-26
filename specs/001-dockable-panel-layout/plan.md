@@ -1,6 +1,6 @@
 # Implementation Plan: Dockable Block Layout
 
-**Branch**: `001-dockable-panel-layout` | **Date**: 2026-02-20 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-dockable-panel-layout/spec.md`
+**Branch**: `001-dockable-panel-layout` | **Date**: 2026-02-20 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-dockable-panel-layout/spec.md`
 **Input**: Feature specification from `/specs/001-dockable-panel-layout/spec.md`
 
 ## Summary
@@ -10,7 +10,7 @@ Implement a reusable dock layout system for reader blocks so users can drag the 
 ## Technical Context
 
 **Language/Version**: TypeScript 5.9 + Vue 3.5 SFC + SCSS  
-**Primary Dependencies**: Vue runtime (`vue`), existing eHunter components and store modules, no new UI library  
+**Primary Dependencies**: Vue runtime (`vue`), existing JM-EHunter components and store modules, no new UI library  
 **Storage**: Userscript storage (`GM_getValue`/`GM_setValue`) preferred, fallback to `PlatformService.storageGet/storageSet`  
 **Testing**: Manual runtime verification via `npm run dev` + `chrome-devtools-mcp`; static type-check via `npm run type-check`  
 **Target Platform**: Browser userscript runtime on EH reader UI (desktop + touch-enabled browsers)

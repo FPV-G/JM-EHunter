@@ -42,7 +42,7 @@ const operations = [
                     pageCount,
                     chunkSize: store.downloadChunkSize,
                     autoRetryByOtherSource: store.autoRetryByOtherSource,
-                    eHunterVersion: '',
+                    jmEHunterVersion: '',
                     onStatus: (event) => {
                         storeAction.applyDownloadStatusEvent(taskId, store.albumTitle, event)
                     },

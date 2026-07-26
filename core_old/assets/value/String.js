@@ -224,10 +224,10 @@ export default {
         en: 'Full screen',
         jp: '全画面表示'
     },
-    closeEHunter: {
-        cn: '关闭eHunter',
-        en: 'Close eHunter',
-        jp: 'eHunter閉じる'
+    closeJM-EHunter: {
+        cn: '关闭JM-EHunter',
+        en: 'Close JM-EHunter',
+        jp: 'JM-EHunter閉じる'
     },
     toggleTopBar: {
         cn: '显示/隐藏顶栏 [Esc]',

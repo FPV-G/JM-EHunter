@@ -4,13 +4,13 @@ import pkgJson from '../../package.json'
 const welcomeInstructionTemplate: Record<SupportedLang, string> = {
     cn: `
 1.Change language/切换语言/言語を変更
-![image-language](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/language.jpg)
+![image-language](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/language.jpg)
 
-1.显示/隐藏顶栏和关闭eHunter
-![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/topbar_close.jpg)
+1.显示/隐藏顶栏和关闭JM-EHunter
+![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/topbar_close.jpg)
 
-2.在页面右上角点击打开eHunter
-![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/open_ehunter.jpg)
+2.在页面右上角点击打开JM-EHunter
+![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/open_ehunter.jpg)
 
 3.\`滚动\`模式下, 支持\`A\`. \`D\`, \`Left(左)\`和\`Right(右)\`键翻页.
 
@@ -21,12 +21,12 @@ const welcomeInstructionTemplate: Record<SupportedLang, string> = {
 6.有更多想要的功能, 可以反馈给我, 如果该功能可以有的话, 我有空的时候会支持的.
 
 ### iPhone和iPad使用指引
-说明链接：[链接](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_cn.md)
+说明链接：[链接](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
 
-### eHunter-local
-eHunter-local是eHunter的本地版本, 支持Windows和MacOS. [项目主页](https://github.com/hanFengSan/eHunter_local)
+### JM-EHunter-local
+JM-EHunter-local是JM-EHunter的本地版本, 支持Windows和MacOS. [项目主页](https://github.com/hanFengSan/JM-EHunter_local)
 
-[Github下载](https://github.com/hanFengSan/eHunter_local/releases)
+[Github下载](https://github.com/hanFengSan/JM-EHunter_local/releases)
 
 ### 反馈和建议
 * 可在[Github]({{HOME_PAGE}})上开issue给我.
@@ -41,13 +41,13 @@ eHunter-local是eHunter的本地版本, 支持Windows和MacOS. [项目主页](ht
 `,
     en: `
 1.Change language/切换语言/言語を変更
-![image-language](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/language.jpg)
+![image-language](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/language.jpg)
 
-1.Show/hide top bar and close the eHunter
-![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/topbar_close.jpg)
+1.Show/hide top bar and close the JM-EHunter
+![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/topbar_close.jpg)
 
-2.Click the button at the upper right corner of this page to open the eHunter
-![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/open_ehunter.jpg)
+2.Click the button at the upper right corner of this page to open the JM-EHunter
+![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/open_ehunter.jpg)
 
 3.In \`Scroll\` mode, you can turn pages with \`A\`, \`D\`, \`Left\`, and \`Right\`.
 
@@ -58,12 +58,12 @@ eHunter-local是eHunter的本地版本, 支持Windows和MacOS. [项目主页](ht
 6.If there are more features you would like, feel free to send feedback. If they are feasible, I will add them when time allows.
 
 ### iPhone and iPad Guide
-Guide link: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_en.md)
+Guide link: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
 
-### eHunter-local
-The eHunter-local is local version of eHunter, supporting Windows and MacOS. [Home Page](https://github.com/hanFengSan/eHunter_local)
+### JM-EHunter-local
+The JM-EHunter-local is local version of JM-EHunter, supporting Windows and MacOS. [Home Page](https://github.com/hanFengSan/JM-EHunter_local)
 
-[Github releases](https://github.com/hanFengSan/eHunter_local/releases)
+[Github releases](https://github.com/hanFengSan/JM-EHunter_local/releases)
 
 ### Feedback & Suggestions
 * You can open an issue on [Github]({{HOME_PAGE}}).
@@ -78,13 +78,13 @@ If you enjoy this extension, I would really appreciate a five-star rating in the
 `,
     jp: `
 1.Change language/切换语言/言語を変更
-![image-language](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/language.jpg)
+![image-language](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/language.jpg)
 
-1.トップバーを表示/非表示にしてeHunterを閉じる
-![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/topbar_close.jpg)
+1.トップバーを表示/非表示にしてJM-EHunterを閉じる
+![image-topbar_close](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/topbar_close.jpg)
 
-2.このページの右上隅にあるボタンをクリックしてeHunterを開きます
-![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/open_ehunter.jpg)
+2.このページの右上隅にあるボタンをクリックしてJM-EHunterを開きます
+![image-open_ehunter](https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/open_ehunter.jpg)
 
 3.\`スクロール\`モードでは、\`A\`、\`D\`、\`Left\`、\`Right\`キーでページをめくれます。
 
@@ -95,12 +95,12 @@ If you enjoy this extension, I would really appreciate a five-star rating in the
 6.追加してほしい機能があれば、ぜひフィードバックしてください。実現可能であれば、時間のあるときに対応します。
 
 ### iPhone と iPad の利用ガイド
-案内リンク: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_jp.md)
+案内リンク: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
 
-### eHunter-local
-eHunter-localはeHunterのローカル版で、WindowsとMacOSをサポートしています。[Home Page](https://github.com/hanFengSan/eHunter_local)
+### JM-EHunter-local
+JM-EHunter-localはJM-EHunterのローカル版で、WindowsとMacOSをサポートしています。[Home Page](https://github.com/hanFengSan/JM-EHunter_local)
 
-[Github releases](https://github.com/hanFengSan/eHunter_local/releases)
+[Github releases](https://github.com/hanFengSan/JM-EHunter_local/releases)
 
 ### フィードバックと提案
 * [Github]({{HOME_PAGE}}) で issue を作成できます。

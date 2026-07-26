@@ -33,13 +33,13 @@ export default class EHPlatform extends BasePlatform {
         document.body.appendChild(elt);
     }
 
-    initEHunter() {
-        super.initEHunter();
+    initJM-EHunter() {
+        super.initJM-EHunter();
         core.createAppView('vue-container', '#app',
             core.launcher
                 .setAlbumService(new AlbumServiceImpl(document.documentElement.innerHTML))
-                .setEHunterService({
-                    showEHunterView: this.showEHunterView
+                .setJM-EHunterService({
+                    showJM-EHunterView: this.showJM-EHunterView
                 })
                 .setConfig(config)
                 .instance());

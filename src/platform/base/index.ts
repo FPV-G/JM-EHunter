@@ -7,8 +7,8 @@ export abstract class BasePlatform {
     async init(): Promise<void> {
         if (this.isAlbumViewPage()) {
             this.createEhunterSwitch();
-            if (await core.SettingService.getEHunterStatus()) {
-                this.toggleEHunterView(true);
+            if (await core.SettingService.getJM-EHunterStatus()) {
+                this.toggleJM-EHunterView(true);
             }
         }
     }
@@ -25,7 +25,7 @@ export abstract class BasePlatform {
         container.style.zIndex = '10';
         container.style.cursor = 'pointer';
         container.style.transition = 'all 0.2s cubic-bezier(.46,-0.23,.37,2.38)';
-        container.setAttribute('title', 'open eHunter');
+        container.setAttribute('title', 'open JM-EHunter');
         container.setAttribute('id', 'switch');
         container.addEventListener('click', this.openEhunterBySwitch.bind(this));
 
@@ -57,14 +57,14 @@ export abstract class BasePlatform {
                     element.style.top = '-150px';
                 }
             }, 2000);
-            core.SettingService.toggleEHunter(true);
+            core.SettingService.toggleJM-EHunter(true);
             window.setTimeout(() => {
-                this.toggleEHunterView(true);
+                this.toggleJM-EHunterView(true);
             }, 300);
         }
     }
 
-    createEHunterContainer() {
+    createJM-EHunterContainer() {
         document.body.style.overflow = 'hidden';
         let element = <HTMLElement>document.createElement('div');
         element.style.position = 'fixed';
@@ -87,23 +87,23 @@ export abstract class BasePlatform {
         }, 0);
     }
 
-    toggleEHunterView(open: boolean): void {
+    toggleJM-EHunterView(open: boolean): void {
         if (document.getElementsByClassName('vue-container').length > 0) {
-            this.showEHunterView(open);
+            this.showJM-EHunterView(open);
         } else {
-            this.initEHunter();
+            this.initJM-EHunter();
         }
     }
 
-    showEHunterView(show: boolean): void {
+    showJM-EHunterView(show: boolean): void {
         document.body.style.overflow = show ? 'hidden' : '';
         (<HTMLElement>document.getElementsByClassName('vue-container')[0]).style.top = show ? '0' : '-100%';
     }
 
     blockHostActions(): void { }
 
-    initEHunter(): void {
+    initJM-EHunter(): void {
         this.blockHostActions();
-        this.createEHunterContainer();
+        this.createJM-EHunterContainer();
     }
 }

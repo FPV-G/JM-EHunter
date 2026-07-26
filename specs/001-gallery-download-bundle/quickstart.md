@@ -23,7 +23,7 @@ npm run dev
 - Open `DownloadConfirmDialog`, click confirm, and verify task starts immediately.
 - Validate images are processed in page order and file names use zero-padded numbering (`001`, `002`, ...).
 - For a gallery > 200 pages, verify two or more zip downloads are triggered, each containing images + YAML.
-- Validate YAML includes intro URL, gallery title, total pages, download time, eHunter version, total chunks, chunk index.
+- Validate YAML includes intro URL, gallery title, total pages, download time, JM-EHunter version, total chunks, chunk index.
 
 ### Story P2: Reusable floating status notifications
 

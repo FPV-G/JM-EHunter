@@ -1,6 +1,6 @@
 # Implementation Plan: Gallery Download Bundle
 
-**Branch**: `001-gallery-download-bundle` | **Date**: 2026-02-22 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-gallery-download-bundle/spec.md`
+**Branch**: `001-gallery-download-bundle` | **Date**: 2026-02-22 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-gallery-download-bundle/spec.md`
 **Input**: Feature specification from `/specs/001-gallery-download-bundle/spec.md`
 
 ## Summary

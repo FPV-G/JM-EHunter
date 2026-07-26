@@ -18,13 +18,13 @@ export default class NHApp extends BasePlatform {
         document.body.appendChild(elt);
     }
 
-    initEHunter(): void {
-        super.initEHunter();
+    initJM-EHunter(): void {
+        super.initJM-EHunter();
         core.createAppView('vue-container', '#app',
             core.launcher
                 .setAlbumService(new AlbumServiceImpl(document.documentElement.innerHTML))
-                .setEHunterService({
-                    showEHunterView: this.showEHunterView
+                .setJM-EHunterService({
+                    showJM-EHunterView: this.showJM-EHunterView
                 })
                 .setConfig(config)
                 .instance());

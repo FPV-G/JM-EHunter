@@ -18,7 +18,7 @@
     </div>
     <p class="feedback-link">
       <strong>Feedback / Bug Report:</strong>
-      <a href="https://github.com/hanFengSan/eHunter/issues" target="_blank" rel="noopener noreferrer">Open GitHub Issues</a>
+      <a href="https://github.com/hanFengSan/JM-EHunter/issues" target="_blank" rel="noopener noreferrer">Open GitHub Issues</a>
     </p>
     <p class="error-message">{{ error.message }}</p>
     <div v-if="initializationSteps.length" class="init-steps">
@@ -39,7 +39,7 @@
       <div class="error-info">
         <p><strong>Error:</strong> {{ error.message }}</p>
         <p><strong>Platform:</strong> {{ error.platform }}</p>
-        <p><strong>eHunter Version:</strong> {{ appVersion }}</p>
+        <p><strong>JM-EHunter Version:</strong> {{ appVersion }}</p>
         <p><strong>Device:</strong> {{ deviceName }}</p>
         <p><strong>OS:</strong> {{ operatingSystem }}</p>
         <p><strong>URL:</strong> {{ error.url }}</p>
@@ -180,7 +180,7 @@ const errorDetailText = computed(() => {
   lines.push(...[
     `Error: ${currentError.message}`,
     `Platform: ${currentError.platform}`,
-    `eHunter Version: ${appVersion}`,
+    `JM-EHunter Version: ${appVersion}`,
     `Device: ${deviceName}`,
     `OS: ${operatingSystem}`,
     `URL: ${currentError.url}`,

@@ -1,23 +1,23 @@
-# eHunter
+# JM-EHunter
 提供卷轴式/书本式阅读
 
 # 预览
-<img src="https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/github_preview_4.png" style="width: 800px; display: block; padding: 10px;"/>
-<img src="https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/github_preview_5_1.png" style="width: 800px; display: block; padding: 10px;"/>
-<img src="https://raw.githubusercontent.com/hanFengSan/eHunter/master/github_image/github_preview_3.jpg" style="width: 800px; display: block; padding: 10px;"/>
+<img src="https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/github_preview_4.png" style="width: 800px; display: block; padding: 10px;"/>
+<img src="https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/github_preview_5_1.png" style="width: 800px; display: block; padding: 10px;"/>
+<img src="https://raw.githubusercontent.com/hanFengSan/JM-EHunter/master/github_image/github_preview_3.jpg" style="width: 800px; display: block; padding: 10px;"/>
 
 # 在iPhone和iPad上使用
-现在可以在iPhone和iPad上使用eHunter了！可参考以下指南：
-CN: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_cn.md)
-EN: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_en.md)
-JP: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_jp.md)
+现在可以在iPhone和iPad上使用JM-EHunter了！可参考以下指南：
+CN: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
+EN: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
+JP: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
 
 ## 实现方式概要
 在在原页面上新创建一个节点, 将vue注入到此节点上. 爬虫是利用fetch实现的.
 实现上基本隔离了具体环境, 可很容易得移植到其他漫画网站/平台等.
 
 ## 获取
-暴力猴/油猴/userscript版本: [openuserjs](https://openuserjs.org/scripts/alexchen/eHunter)
+暴力猴/油猴/userscript版本: [openuserjs](https://openuserjs.org/scripts/alexchen/JM-EHunter)
 
 
 ## 运行
@@ -33,7 +33,7 @@ JP: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_jp
 主要目录职责如下：
 
 ```
-|-eHunter
+|-JM-EHunter
   |-src
   |  |-main.ts               // 入口：初始化并挂载应用（当前以测试挂载为主）
   |  |-config.ts             // 运行时配置

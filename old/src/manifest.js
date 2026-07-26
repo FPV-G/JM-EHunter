@@ -2,14 +2,14 @@ let config = require('./config');
 
 module.exports.chrome = {
     'manifest_version': 2,
-    'name': 'eHunter - more powerful e-hentai/exhentai!',
-    'short_name': 'eHunter',
+    'name': 'JM-EHunter - more powerful e-hentai/exhentai!',
+    'short_name': 'JM-EHunter',
     'description': 'More powerful e-hentai/eHentai/exhentai! Scroll and Book view',
     'version': config.version,
     'content_security_policy': 'script-src \'self\' \'unsafe-eval\'; object-src \'self\'',
     'browser_action': {
         'default_popup': 'popup.html',
-        'default_title': 'eHunter',
+        'default_title': 'JM-EHunter',
         'default_icon': {
             '16': './img/ehunter_icon.png',
             '32': './img/ehunter_icon.png'
@@ -76,7 +76,7 @@ module.exports.tampermonkey =
 // @namespace    http://tampermonkey.net/
 // @version      ${config.version}
 // @description  This extension provides a scroll mode and book mode to e-hentai/exhentai/nhentai, for the best reading experince!  此扩展为e-hentai/exhentai/nhentai提供一个滚动模式和书本模式, 提供良好的阅读体验.
-// @supportURL   https://github.com/hanFengSan/eHunter/issues
+// @supportURL   https://github.com/hanFengSan/JM-EHunter/issues
 // @author       Alex Chen
 // @match        https://exhentai.org/*
 // @match        https://e-hentai.org/*

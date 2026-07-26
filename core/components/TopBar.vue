@@ -14,7 +14,7 @@
             <CircleIconButton class="button tips tips-left tips-down" icon-type="menu"
                 :title-content="i18n.toggleTopBar" :rotate="store.showTopBar" @click="storeAction.toggleShowTopBar()" size="normal"/>
             <CircleIconButton class="button tips tips-left tips-down" icon-type="close"
-                :title-content="i18n.closeEHunter" @click="closeEHunter" size="normal"/>
+                :title-content="i18n.closeJMEHunter" @click="closeJMEHunter" size="normal"/>
         </div>
         <div :class="['inner-content', { hide: !store.showTopBar }]" ref="innerContentRef">
             <div class="item" v-for="(field, index) in topBarFields" :key="field.id" 
@@ -66,7 +66,7 @@ import DownloadConfirmDialog from './dialog/DownloadConfirmDialog.vue'
 import { computed, ref, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { getFieldValue, setFieldValue, getDropList, getNumList, getNumSuffix } from '../store/settingFieldRuntime'
 
-const emit = defineEmits(['closeEHunter'])
+const emit = defineEmits(['closeJMEHunter'])
 
 const showMoreMenu = ref(false)
 const innerContentRef = ref<HTMLElement | null>(null)
@@ -119,8 +119,8 @@ function toggleMoreMenu() {
     showMoreMenu.value = !showMoreMenu.value
 }
 
-function closeEHunter() {
-    emit('closeEHunter')
+function closeJMEHunter() {
+    emit('closeJMEHunter')
 }
 
 function checkOverlap() {

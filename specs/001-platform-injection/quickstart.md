@@ -216,7 +216,7 @@ if (result instanceof Error) {
   
   // Show user-facing error
   showError({
-    message: 'Failed to initialize eHunter reader',
+    message: 'Failed to initialize JM-EHunter reader',
     details: {
       error: result.message,
       stack: result.stack,

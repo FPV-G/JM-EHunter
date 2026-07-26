@@ -1,6 +1,6 @@
 # Implementation Plan: Thumb Expand Modal
 
-**Branch**: `[001-thumb-expand-modal]` | **Date**: 2026-02-21 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-thumb-expand-modal/spec.md`
+**Branch**: `[001-thumb-expand-modal]` | **Date**: 2026-02-21 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-thumb-expand-modal/spec.md`
 **Input**: Feature specification from `/specs/001-thumb-expand-modal/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.

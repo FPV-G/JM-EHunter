@@ -6,7 +6,7 @@
             <mu-tab :value="notification.name" :title="['SUBSCRIPTION','标签订阅'][lang]"/>
         </mu-tabs>
         <div class="read" v-if="activeTab === read.name">
-            <span>{{['Read a gallery to use eHunter','打在网站阅读漫画,体验eHunter'][lang]}}</span>
+            <span>{{['Read a gallery to use JM-EHunter','打在网站阅读漫画,体验JM-EHunter'][lang]}}</span>
         </div>
         <div v-if="activeTab === notification.name" class="notification">
             <notification></notification>
@@ -27,7 +27,7 @@ export default {
             activeTab: '',
             read: {
                 name: Symbol(),
-                eHunterView: true,
+                JM-EHunterView: true,
                 thumbView: true,
                 thumbBackground: true,
                 paginationView: true,

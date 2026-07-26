@@ -16,8 +16,8 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 * 图片加载失败时，支持自动换源重试
 
 ### iPhone / iPad 支持
-* 目前在 iOS 15/iPadOS 15 上可运行油猴脚本/userscript，因此 eHunter 也可在 iPhone / iPad 使用
-* 使用指南: [链接](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_cn.md)
+* 目前在 iOS 15/iPadOS 15 上可运行油猴脚本/userscript，因此 JM-EHunter 也可在 iPhone / iPad 使用
+* 使用指南: [链接](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_cn.md)
 `,
     en: `
 ### v3.1.0 Notes
@@ -34,8 +34,8 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 * Automatically retries with an alternative source when image loading fails
 
 ### iPhone / iPad Support
-* Userscripts can run on iOS 15 / iPadOS 15, so eHunter is now available on iPhone and iPad
-* Guide: [Link](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_en.md)
+* Userscripts can run on iOS 15 / iPadOS 15, so JM-EHunter is now available on iPhone and iPad
+* Guide: [Link](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_en.md)
 `,
     jp: `
 ### v3.1.0 リリースノート
@@ -52,8 +52,8 @@ const versionNotesTemplate: Record<SupportedLang, string> = {
 * 画像の読み込みに失敗した場合、別ソースで自動再試行
 
 ### iPhone / iPad 対応
-* iOS 15 / iPadOS 15 では userscript が動作するため、eHunter を iPhone / iPad でも利用できます
-* ガイド: [リンク](https://github.com/hanFengSan/eHunter/blob/master/misc/iphone_ipad_jp.md)
+* iOS 15 / iPadOS 15 では userscript が動作するため、JM-EHunter を iPhone / iPad でも利用できます
+* ガイド: [リンク](https://github.com/hanFengSan/JM-EHunter/blob/master/misc/iphone_ipad_jp.md)
 `,
 }
 

@@ -1,6 +1,6 @@
 # Implementation Plan: 书页模式翻页动效开关
 
-**Branch**: `001-add-pageflip-toggle` | **Date**: 2026-02-18 | **Spec**: `/Users/alex/Desktop/works/js/eHunter/specs/001-add-pageflip-toggle/spec.md`
+**Branch**: `001-add-pageflip-toggle` | **Date**: 2026-02-18 | **Spec**: `/Users/alex/Desktop/works/js/JM-EHunter/specs/001-add-pageflip-toggle/spec.md`
 **Input**: Feature specification from `/specs/001-add-pageflip-toggle/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.

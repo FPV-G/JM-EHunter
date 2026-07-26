@@ -6,7 +6,7 @@
             :class="{ 'dock-bottom': store.thumbDockSlot === 'bottom' }"
             :axis="store.thumbDockSlot === 'bottom' ? 'x' : 'y'">
             <div class="header">
-                <DockHandle class="app-name" label="EHUNTER" :aria-label="'EHUNTER Dock Handle'" @drag-start="onDockDragStart" />
+                <DockHandle class="app-name" label="JM-EHUNTER" :aria-label="'JM-EHUNTER Dock Handle'" @drag-start="onDockDragStart" />
             </div>
             <div class="indicator"></div>
             <div class="thumb-container" @click="select(i)" v-for="(item, i) of volThumbs" :key="item.id" ref="thumbContainers">

@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<{
     ariaLabel?: string
     longPressMs?: number
 }>(), {
-    label: 'EHUNTER',
+    label: 'JM-EHUNTER',
     ariaLabel: 'Dock handle',
     longPressMs: 500,
 })

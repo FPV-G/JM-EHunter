@@ -112,7 +112,7 @@ export class ImgPageParser {
                 const sourceUrl = data.cdn + '/media/photos/' + (data.aid || this.albumId) + '/' + f
                 list.push({
                     id: i + 1, index: i,
-                    // eHunter skips getImgSrc() when src is already populated.
+                    // JM-EHunter skips getImgSrc() when src is already populated.
                     // Keep the scrambled CDN source in pageUrl and leave src empty
                     // so every displayed page must pass through the decoder.
                     pageUrl: sourceUrl,

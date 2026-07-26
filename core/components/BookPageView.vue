@@ -7,11 +7,11 @@
             :active-load="activeLoad"
             @toggle-odd-even="onToggleOddEven"/>
         <div class="page start-page" v-if="index == -1">
-            <div :class="['ehunter-tag', { 'left': store.bookDirection === 1 }]">EHUNTER</div>
+            <div :class="['ehunter-tag', { 'left': store.bookDirection === 1 }]">JM-EHUNTER</div>
             <h1>{{ store.albumTitle }}</h1>
         </div>
         <div class="page end-page" v-if="index == store.pageCount">
-            <div :class="['ehunter-tag', { 'left': store.bookDirection === 0 }]">EHUNTER</div>
+            <div :class="['ehunter-tag', { 'left': store.bookDirection === 0 }]">JM-EHUNTER</div>
             <h1>END</h1>
         </div>
     </div>

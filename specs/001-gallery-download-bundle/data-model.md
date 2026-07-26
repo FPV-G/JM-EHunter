@@ -63,7 +63,7 @@
   - `galleryTitle` (string, required)
   - `totalPages` (number, required)
   - `downloadTime` (datetime string, required)
-  - `eHunterVersion` (string, required)
+  - `JM-EHunterVersion` (string, required)
   - `totalChunks` (number, required)
   - `chunkIndex` (number, required)
 - Validation rules:

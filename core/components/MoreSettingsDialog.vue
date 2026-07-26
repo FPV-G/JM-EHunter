@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="ehunter-row">
                                     <span class="ehunter-label">Github</span>
-                                    <a target="_blank" href="https://github.com/hanFengSan/eHunter" class="ehunter-link">https://github.com/hanFengSan/eHunter</a>
+                                    <a target="_blank" href="https://github.com/hanFengSan/JM-EHunter" class="ehunter-link">https://github.com/hanFengSan/JM-EHunter</a>
                                 </div>
                                 <div class="ehunter-row">
                                     <span class="ehunter-label">{{ i18n.resetTip }}</span>

@@ -16,7 +16,7 @@ class SettingService {
     _getDefaultSettings() {
         return {
             albumWidth: { eventName: 'setAlbumWidth', val: 80 }, // eventName is action name of vuex
-            toggleEHunter: { val: true },
+            toggleJM-EHunter: { val: true },
             toggleThumbView: { eventName: 'toggleThumbView', val: true },
             loadNum: { eventName: 'setLoadNum', val: 3 },
             volumeSize: { eventName: 'setVolumeSize', val: 50 },
@@ -27,7 +27,7 @@ class SettingService {
             bookScreenSize: { eventName: 'setBookScreenSize', val: 2 },
             lang: { eventName: 'setString', val: tags.LANG_EN },
             updateTime: { val: 0 }, // the time stamp of last showing a dialog of update
-            firstOpen: { val: true }, // show instructions dialog for the users of first opening the eHunter
+            firstOpen: { val: true }, // show instructions dialog for the users of first opening the JM-EHunter
             firstOpenBookMode: { val: true }, // show instructions dialog for the users of first opening the book mode
             showTopBar: { eventName: 'toggleTopBar', val: true },
             isNormalMode: { val: true },
@@ -120,12 +120,12 @@ class SettingService {
         return await this._getSettingItem('albumWidth');
     }
 
-    async toggleEHunter(val) {
-        await this._setSettingItem('toggleEHunter', val);
+    async toggleJM-EHunter(val) {
+        await this._setSettingItem('toggleJM-EHunter', val);
     }
 
-    async getEHunterStatus() {
-        return await this._getSettingItem('toggleEHunter');
+    async getJM-EHunterStatus() {
+        return await this._getSettingItem('toggleJM-EHunter');
     }
 
     async toggleThumbView(val) {

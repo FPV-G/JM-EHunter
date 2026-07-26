@@ -9,8 +9,8 @@ export default {
         service.album = obj;
         return this;
     },
-    setEHunterService(obj) {
-        service.eHunter = obj;
+    setJM-EHunterService(obj) {
+        service.JM-EHunter = obj;
         return this;
     },
     setConfig(obj) {
