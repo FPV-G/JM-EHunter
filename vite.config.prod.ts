@@ -13,11 +13,11 @@ const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 
 }
 
 const userscriptBanner = `// ==UserScript==
-// @name         eHunter for 18comic
+// @name         JM-EHunter for 18comic
 // @namespace    http://tampermonkey.net/
 // @version      ${pkg.version}.18comic.5
-// @description  eHunter reader adapted for 18comic, including scrambled-image restoration.
-// @supportURL   https://github.com/hanFengSan/eHunter/issues
+// @description  JM-EHunter reader adapted for 18comic, including scrambled-image restoration.
+// @supportURL   https://github.com/yourusername/JM-EHunter/issues
 // @author       Alex Chen
 // @match        https://exhentai.org/*
 // @match        https://e-hentai.org/*
@@ -41,14 +41,14 @@ const prependUserscriptBannerPlugin = (): Plugin => ({
   apply: 'build',
   enforce: 'post',
   writeBundle(outputOptions, bundle) {
-    const output = bundle['ehunter.iife.js']
+    const output = bundle['jmehunter.iife.js']
 
     if (!output) {
       return null
     }
 
     const outputDir = outputOptions.dir ?? 'dist'
-    const outputPath = join(outputDir, 'ehunter.iife.js')
+    const outputPath = join(outputDir, 'jmehunter.iife.js')
     const code = readFileSync(outputPath, 'utf-8')
 
     if (code.startsWith('// ==UserScript==')) {
@@ -71,7 +71,7 @@ export default defineConfig({
   },
   define: {
     'process.env.NODE_ENV': JSON.stringify('production'),
-    __EHUNTER_VERSION__: JSON.stringify(pkg.version)
+    __JMEHUNTER_VERSION__: JSON.stringify(pkg.version)
   },
   appType: 'custom',
   server: {
@@ -83,9 +83,9 @@ export default defineConfig({
     modulePreload: false,
     lib: { // add 30kb size
       entry: './src/main.ts',
-      name: 'ehunter',
+      name: 'jmehunter',
       formats: ['iife'],
-      fileName: 'ehunter'
+      fileName: 'jmehunter'
     }
   }
 })
