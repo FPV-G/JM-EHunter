@@ -1,6 +1,6 @@
 # JM-EHunter
 
-[ENGLIGSH](README_EN.md) [日本語](README_JP.md)
+[English](README_EN.md)    [日本語](README_JP.md)
 
 基于 [EHunter](https://github.com/hanFengSan/eHunter) 的增强版漫画阅读器，完整支持 E-Hentai 和 18comic（禁漫天堂）。
 
